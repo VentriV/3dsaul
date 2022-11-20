@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@keyframes saul {
+from
+{witdh:0%; height:0%;}
+to
+{width:100%; height:100%;}
+}
+
+body {
+	background-color: Grey;
+}
+#container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width:100%;
+	height:100%;
+}
+
+.dsaul{
+animation-name: saul;
+animation-duration: 3s;
+animation-fill-mode: both;
+}
+.heisenberg {
+	content: url("heisenberg.png");
+}
+</style>
+</head>
+<body>
+<h1>SAUL</h1>
+<p>Wprowadź liczbę Saulów: </p>
+<input type="number" min="1" max="9" maxlength="2" id="liczba" style="width:150px;"><br>
+<input type="button" id="submit" value="WYŚWIETL" onClick="wypisz()">
+<div id="container">
+</div>
+<script>
+function wypisz() {
+	const liczba = document.getElementById("liczba").value;
+	if (liczba > 9) {
+	alert("Maksymalna liczba saul'ów to 9")
+    }
+	else {
+	document.getElementById("container").innerHTML=("<div><video class='dsaul' width='460px' height='360px' autoplay loop poster='saul.jpg'><source src='Saul_goodman_3d.mp4' type='video/mp4'></video></div>".repeat(liczba));
+	}
+}
+</script>
+</body>
+</html>
