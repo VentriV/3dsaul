@@ -18,7 +18,6 @@ var ile_skuch = 0;
 var yes = new Audio("yes.wav");
 var no = new Audio("no.wav");
 var lose = new Audio("lose.mp3");
-var win = new Audio("win.mp3");
 
 var haslo1 = "";
 
@@ -131,7 +130,8 @@ function sprawdz(nr) {
     if(haslo == haslo1) {
         document.getElementById("alfabet").innerHTML = "Tak jest! Podano prawidłowe hasło: "+haslo+
         "<br><br><span class='reset' onclick='location.reload()'>JESZCZE RAZ?</span>";
-		document.getElementById("epic").innerHTML = "<video autoplay height='300px' width='300px'><source src='epic.mp4'></source></video>"
+		document.getElementById("epic").innerHTML = "<source src='epic.mp4'></source>"
+		document.getElementById("szubienica").innerHTML = '<img src="" alt="">';
     }
     //przegrana
     if (ile_skuch>=9) {

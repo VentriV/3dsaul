@@ -54,3 +54,11 @@ body {
 .reset:hover {
     color: white;
 }
+#epic {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: -1;
+}
