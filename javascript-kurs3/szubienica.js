@@ -129,9 +129,9 @@ function sprawdz(nr) {
     }
     //wygrana
     if(haslo == haslo1) {
-        win.play();
         document.getElementById("alfabet").innerHTML = "Tak jest! Podano prawidłowe hasło: "+haslo+
         "<br><br><span class='reset' onclick='location.reload()'>JESZCZE RAZ?</span>";
+		document.getElementById("epic").innerHTML = "<video autoplay height='300px' width='300px'><source src='epic.mp4'></source></video>"
     }
     //przegrana
     if (ile_skuch>=9) {
