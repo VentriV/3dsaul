@@ -4,6 +4,11 @@ body {
     font-size: 28px;
     font-family: 'Inconsolata', monospace;
     font-weight: 700;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 #pojemnik {
     width: 900px;
@@ -40,6 +45,11 @@ body {
     float: left;
     cursor: pointer;
     border-radius: 15px;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 .litera:hover {
     background-color: #222222;
@@ -50,6 +60,11 @@ body {
     color: green;
     cursor: pointer;
     font-size: 48px;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 .reset:hover {
     color: white;
